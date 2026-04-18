@@ -1,7 +1,7 @@
 ## 📸 Evidencias de funcionamiento
 
 ### 🏠 Pantalla principal (Tab1 - Alerta)
-![Pantalla principal](./screenshots/tab1.jpeg)
+![Pantalla principal](./tab1.jpeg)
 
 **Descripción:**  
 Esta pantalla corresponde a la pestaña Tab1.  
@@ -11,7 +11,7 @@ Esta funcionalidad permite demostrar la interacción básica con el usuario medi
 ---
 
 ### 📷 Captura de imágenes (Tab2 - Cámara)
-![Tab2 Cámara](./screenshots/tab2.jpeg)
+![Tab2 Cámara](./tab2.jpeg)
 
 **Descripción:**  
 La pestaña Tab2 contiene un botón con ícono de cámara, el cual permite acceder a la cámara del dispositivo.  
@@ -21,7 +21,7 @@ Esta funcionalidad utiliza Capacitor para interactuar con el hardware del dispos
 ---
 
 ### 🖼️ Galería de imágenes (Tab3)
-![Galería](./screenshots/tab3.jpeg)
+![Galería](./tab3.jpeg)
 
 **Descripción:**  
 En la pestaña Tab3 se visualizan las fotografías que han sido tomadas previamente.  
@@ -30,7 +30,7 @@ Las imágenes se muestran en forma de galería, permitiendo al usuario ver todas
 ---
 
 ### 📱 Ejecución en Android
-![Android](./screenshots/android.jpeg)
+![Android](./android.jpeg)
 
 **Descripción:**  
 En esta imagen se muestra la aplicación ejecutándose en un dispositivo Android.  
