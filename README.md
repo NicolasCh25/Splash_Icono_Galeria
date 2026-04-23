@@ -132,7 +132,7 @@ Pantalla de carga personalizada que aparece al iniciar la aplicación.
 ---
 
 ### 📱 Ícono de la aplicación
-![Icono](./icon.jpeg)
+![Icono](./icono app.png)
 
 **Descripción:**  
 Ícono personalizado visible en el dispositivo móvil.
