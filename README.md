@@ -124,7 +124,7 @@ Se visualizan las imágenes capturadas en formato de galería.
 ---
 
 ### 🚀 Splash Screen
-![Splash](./splash.jpeg)
+![Splash](./splash.png)
 
 **Descripción:**  
 Pantalla de carga personalizada que aparece al iniciar la aplicación.
@@ -132,7 +132,7 @@ Pantalla de carga personalizada que aparece al iniciar la aplicación.
 ---
 
 ### 📱 Ícono de la aplicación
-![Icono](./icono app.png)
+![Icono](./icon.png)
 
 **Descripción:**  
 Ícono personalizado visible en el dispositivo móvil.
