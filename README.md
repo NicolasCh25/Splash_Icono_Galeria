@@ -9,6 +9,8 @@ La aplicación permite al usuario interactuar con diferentes funcionalidades com
 
 Además, se integró Capacitor para ejecutar la aplicación en dispositivos Android, permitiendo el acceso a funcionalidades nativas como la cámara y el almacenamiento.
 
+Como parte de la mejora visual de la aplicación, se implementó un **ícono personalizado** y un **Splash Screen**, lo que permite brindar una experiencia más profesional al usuario al momento de instalar y abrir la aplicación.
+
 ---
 
 ## 🎯 Objetivo
@@ -16,9 +18,81 @@ Desarrollar una aplicación móvil funcional que permita aplicar los conocimient
 
 ---
 
-## 👨‍💻 Integrantes
+## 👨‍💻 Integrante
 - Nicolás Chiguano  
-- Gabriel Escobar  
+
+---
+
+## 🎨 Personalización de la Aplicación (Ícono y Splash Screen)
+
+### 📌 Descripción
+Se realizó la personalización visual de la aplicación mediante la implementación de:
+
+- Un **ícono personalizado**, visible en el menú del dispositivo móvil  
+- Un **Splash Screen**, mostrado al iniciar la aplicación  
+
+Esto mejora la identidad visual de la app y la experiencia del usuario.
+
+---
+
+### 📁 Estructura utilizada
+Se creó una carpeta en la raíz del proyecto llamada:
+
+```
+resources/
+ ├── icon.png
+ └── splash.png
+```
+
+- `icon.png`: Imagen base del ícono (1024x1024 px)  
+- `splash.png`: Imagen base del splash (2732x2732 px)
+
+---
+
+### ⚙️ Generación de recursos
+
+Para generar automáticamente todos los tamaños necesarios para Android, se utilizó la herramienta de Capacitor:
+
+```bash
+npm install @capacitor/assets --save-dev
+npx @capacitor/assets generate
+```
+
+Este proceso crea todas las versiones del ícono y splash en las carpetas nativas del proyecto Android.
+
+---
+
+### 🔄 Sincronización con el proyecto
+
+Después de generar los recursos, se ejecutaron los siguientes comandos:
+
+```bash
+ionic build
+npx cap sync
+```
+
+---
+
+### 📱 Ejecución en dispositivo
+
+Para ejecutar la aplicación en un dispositivo físico Android:
+
+```bash
+npx cap run android
+```
+
+También se utilizó Android Studio para la ejecución directa en el celular mediante conexión USB y depuración activada.
+
+---
+
+### ⚠️ Consideraciones importantes
+
+- Los nombres de las imágenes deben ser exactamente:
+  - `icon.png`
+  - `splash.png`
+- La carpeta `resources` debe estar en la raíz del proyecto
+- Es necesario desinstalar la aplicación del dispositivo para visualizar cambios en el ícono
+- Android Studio no genera los recursos automáticamente, solo ejecuta la aplicación
 
 ---
 
@@ -29,8 +103,7 @@ Desarrollar una aplicación móvil funcional que permita aplicar los conocimient
 
 **Descripción:**  
 Esta pantalla corresponde a la pestaña Tab1.  
-En esta sección se muestra un botón llamado "Mostrar Alerta", el cual al ser presionado despliega una alerta en pantalla.  
-Esta funcionalidad permite demostrar la interacción básica con el usuario mediante eventos y componentes de Ionic.
+En esta sección se muestra un botón llamado "Mostrar Alerta", el cual al ser presionado despliega una alerta en pantalla.
 
 ---
 
@@ -38,9 +111,7 @@ Esta funcionalidad permite demostrar la interacción básica con el usuario medi
 ![Tab2 Cámara](./tab2.jpeg)
 
 **Descripción:**  
-La pestaña Tab2 contiene un botón con ícono de cámara, el cual permite acceder a la cámara del dispositivo.  
-Al presionar el botón, se abre la cámara para capturar imágenes en tiempo real.  
-Esta funcionalidad utiliza Capacitor para interactuar con el hardware del dispositivo.
+Permite acceder a la cámara del dispositivo para capturar imágenes en tiempo real.
 
 ---
 
@@ -48,8 +119,23 @@ Esta funcionalidad utiliza Capacitor para interactuar con el hardware del dispos
 ![Galería](./tab3.jpeg)
 
 **Descripción:**  
-En la pestaña Tab3 se visualizan las fotografías que han sido tomadas previamente.  
-Las imágenes se muestran en forma de galería, permitiendo al usuario ver todas las fotos capturadas dentro de la aplicación.
+Se visualizan las imágenes capturadas en formato de galería.
+
+---
+
+### 🚀 Splash Screen
+![Splash](./splash.jpeg)
+
+**Descripción:**  
+Pantalla de carga personalizada que aparece al iniciar la aplicación.
+
+---
+
+### 📱 Ícono de la aplicación
+![Icono](./icon.jpeg)
+
+**Descripción:**  
+Ícono personalizado visible en el dispositivo móvil.
 
 ---
 
@@ -57,5 +143,4 @@ Las imágenes se muestran en forma de galería, permitiendo al usuario ver todas
 ![Android](./android.jpeg)
 
 **Descripción:**  
-En esta imagen se muestra la aplicación ejecutándose en un dispositivo Android.  
-Se puede observar que las fotografías capturadas se almacenan automáticamente en la galería del dispositivo, demostrando la correcta integración con Capacitor y el acceso al almacenamiento del sistema.
+Aplicación ejecutándose correctamente en un dispositivo Android.
